@@ -12,7 +12,7 @@ I come from a civil and environmental engineering background and slowly transiti
       -email me@achyuthmadabhushi.com \
       -https://substack.com/@achyuthhacks 
 
-- 👯 I’m looking to collaborate on any papers with the goal of publishing in climate change modeling, machine learning, software engineering 
+- 👯 I’m looking to collaborate on any papers with the goal of publishing in climate change, machine learning, software engineering and cybersecuirty
 - 😄 Pronouns: He,him,his
 
 Current Reading List:
