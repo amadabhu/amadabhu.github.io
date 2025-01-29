@@ -16,6 +16,6 @@ I come from a civil and environmental engineering background and slowly transiti
 - 😄 Pronouns: He,him,his
 
 Current Reading List:
-1. https://mickens.seas.harvard.edu/files/mickens/files/carbink.pdf
-
+1. [Intro to Cryptography](https://www.cs.cornell.edu/courses/cs4830/2010fa/lecnotes.pdf)
+2. [Intro to Control Theory](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=506395)
 
