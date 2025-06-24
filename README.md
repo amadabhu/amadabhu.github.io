@@ -19,3 +19,5 @@ Current Reading List:
 1. [Intro to Cryptography](https://www.cs.cornell.edu/courses/cs4830/2010fa/lecnotes.pdf)
 2. [Intro to Control Theory](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=506395)
 
+Reference repos:
+1. [Webpage template](https://github.com/zirafa/simple-website-template)
