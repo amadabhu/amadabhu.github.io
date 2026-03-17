@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: update_readme
 
 # Controls when the workflow will run
 on:
@@ -23,14 +23,23 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+       uses: neutrinomuon/UpdateREADME@v0.04
+       with:
+            email: # default is ${{ github.actor }}@localhost
+            # The commiter name
+            name: # default is ${{ github.actor }}
+            # GitHub Token
+            TOKEN: 
+            # Branch to update
+            BRANCH: 
+            # Repository to update
+            REPOSITORY: 
+            # Length limit for the directories
+            LENGTH_LIMIT: 
+            # File to be updated
+            FILE: 
+            # Commit message
+            COMMIT_MESSAGE: 
+            
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      
