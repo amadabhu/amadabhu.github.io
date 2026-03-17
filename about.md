@@ -9,7 +9,7 @@ I come from a civil and environmental engineering background and slowly transiti
 - 🔭 I’m building enterprise applications.
 
 ### Current Goals
-- 👯 I’m looking to collaborate on any papers with the goal of publishing in climate change, machine learning, software engineering and cybersecuirty
+- 👯 I’m looking to collaborate on any papers with the goal of publishing in climate change, machine learning, software engineering and cybersecurity
 
 
 ### Current Reading List:
