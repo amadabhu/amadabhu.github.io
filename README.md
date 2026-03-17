@@ -1,5 +1,4 @@
-## Contact
-- 📫 How to reach me: \
-      -email me@achyuthmadabhushi.com \
+## Contact email :
+me@achyuthmadabhushi.com \
   
 
