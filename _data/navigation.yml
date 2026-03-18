@@ -1,4 +1,5 @@
-main:
+docs_list_title: "sitemap"
+docs:
   - title: "About"
     url: ./about.md
   - title: "Reading List"
