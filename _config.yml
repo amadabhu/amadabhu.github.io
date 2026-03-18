@@ -34,7 +34,9 @@ whitelist           : []
 plugins             : []
 
 #themes
-theme: jekyll-theme-hacker
+theme: jekyll-theme-minimal
+title: Achyuth Madabhushi
+description: A short set of Achyuth's musings and descriptions
 
 # Conversion
 markdown            : kramdown
