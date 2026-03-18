@@ -36,7 +36,7 @@ plugins             : []
 #themes
 theme: jekyll-theme-minimal
 title: Achyuth Madabhushi
-description: A short set of Achyuth's musings and descriptions
+description: "A short set of Achyuth's musings"
 
 # Conversion
 markdown            : kramdown
