@@ -1,0 +1,11 @@
+docs_list_title: Sitemap
+docs:
+
+- title: About
+  url: ./about.md
+
+- title: Reading List
+  url: reading.md
+
+- title: Home
+  url: README.md
