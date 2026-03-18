@@ -8,36 +8,7 @@
     <meta name='keywords' content='{{ page.keywords }}'>
     <meta name='author' content='Achyuth Madabhushi'>
 
-    <link href='/css/callout.css' rel='stylesheet'/>
-    <link href='/css/blog.css' rel='stylesheet'/>
-    <link href='/css/trac.css' rel='stylesheet'/>
-    <link href='/css/markdown.css' rel='stylesheet'/>
+
 
 </head>
-<body>
-<div class='content'>
-    {% include nav.html %}
-    <div class='front-matter'>
-        <div class='wrap'>
-            <h1>{{ page.title }}</h1>
-            <h4>{{ page.subtitle }}</h4>
-            <div class='bylines'>
-                <div class='byline'>
-                    <h3>Published&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updated&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Categories</h3>
-                    <p>{{ page.posted }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ page.updated }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{page.keywords}}</p>
-                </div>
-            </div>
-            <div class='clear'></div>
-        </div>
-    </div>
-    <div class='wrap article'>
-        {{ content }}
-    </div>
-    <div id='bibliography'>
-        <div class='wrap'>
-            {% bibliography --cited %}
-        </div>
-    </div>
-</div>
-</body>
 </html>

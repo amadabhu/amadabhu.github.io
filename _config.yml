@@ -40,7 +40,7 @@ whitelist           : []
 plugins             : [jekyll-scholar,jekyll-sitemap,jekyll-feed,jekyll-katex]
 
 #themes
-theme: jekyll-theme-hacker
+#theme: jekyll-theme-hacker
 
 # Conversion
 markdown            : kramdown
