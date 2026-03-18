@@ -42,3 +42,8 @@
 - Born A Crime, Trevor Noah
 
 - This American Woman, Zarna Garg
+
+## [Sitemap](./sitemap.md)
+- [Home](./README.md)
+- [About](./about.md)
+- [Reading List](./reading.md)
