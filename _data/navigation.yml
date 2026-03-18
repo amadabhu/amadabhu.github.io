@@ -1,9 +1,7 @@
 main:
-  - title: "Sitemap"
-    children:
-    - title: "About"
-      url: ./about.md
-    - title: "Reading List"
-      url: ./reading.md
-    - title: "Home"
-      url: ./README.md
+  - title: "About"
+    url: ./about.md
+  - title: "Reading List"
+    url: ./reading.md
+  - title: "Home"
+    url: ./README.md
