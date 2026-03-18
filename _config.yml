@@ -61,6 +61,7 @@ quiet               : false
 verbose             : false
 defaults            : []
 
+nav_enabled         : true
 liquid:
   error_mode        : warn
   strict_filters    : false
