@@ -13,7 +13,6 @@ collections:
   posts:
     output          : true
 
-
 # Handling Reading
 safe                : false
 include             : [".htaccess"]
@@ -36,7 +35,7 @@ plugins             : [jekyll-sitemap,jekyll-toc]
 #themes
 theme: jekyll-theme-minimal
 title: Achyuth Madabhushi
-description: ./sitemap.md
+description: "A collection of Achyuth's haphazard musings"
 
 # Conversion
 markdown            : kramdown
@@ -61,7 +60,7 @@ quiet               : false
 verbose             : false
 defaults            : []
 
-nav_enabled         : true
+
 liquid:
   error_mode        : warn
   strict_filters    : false
@@ -77,3 +76,13 @@ kramdown:
   hard_wrap         : false
   footnote_nr       : 1
   show_warnings     : false
+
+nav_enabled         : true
+defaults:
+  # _docs
+  scope:
+      path: ""
+      type: docs
+    values:
+      sidebar:
+          nav: "docs"
