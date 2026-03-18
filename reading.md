@@ -36,10 +36,9 @@
 
 - The Mythical Man-Month, Fred Brooks
 
+## Comedy
+- Slapstick, Kurt Vonnegut
 
-Comedy
-Slapstick, Kurt Vonnegut
+- Born A Crime, Trevor Noah
 
-Born A Crime, Trevor Noah
-
-This American Woman, Zarna Garg
+- This American Woman, Zarna Garg
