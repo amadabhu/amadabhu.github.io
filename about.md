@@ -12,8 +12,9 @@ I come from a civil and environmental engineering background and slowly transiti
 - 👯 I’m looking to collaborate on any papers with the goal of publishing in climate change, machine learning, software engineering and cybersecurity
 
 
-### Current Reading List:
-1. [Intro to Cryptography](https://www.cs.cornell.edu/courses/cs4830/2010fa/lecnotes.pdf)
-2. [Intro to Control Theory](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=506395)
+## Sitemap
+- [Home](./README.md)
+- [About](./about.md)
+- [Reading List](./reading.md)
 
 
