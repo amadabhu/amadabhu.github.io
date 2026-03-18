@@ -31,7 +31,7 @@ unpublished         : false
 
 # Plugins
 whitelist           : []
-plugins             : [jekyll-scholar,jekyll-sitemap,jekyll-feed,jekyll-readme-index]
+plugins             : []
 
 #themes
 theme: jekyll-theme-hacker
