@@ -36,7 +36,7 @@ plugins             : [jekyll-sitemap,jekyll-toc]
 #themes
 theme: jekyll-theme-minimal
 title: Achyuth Madabhushi
-description: "A short set of Achyuth's musings"
+description: [Readme.md, About.md, Reading.md]
 
 # Conversion
 markdown            : kramdown
