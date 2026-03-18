@@ -140,15 +140,7 @@ h1 {
   margin: 33px auto;
   width: 70px;
 }
-#bibliography {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-#bibliography ol.bibliography {
-  padding-left: 15px;
-  padding-top: 30px;
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.5);
-}
+
 #blog {
   margin-top: 80px;
   margin-bottom: 100px;
@@ -212,11 +204,6 @@ hr {
   }
 }
 
-/* ul li a:after {
-  content:">";
-  float: right;
-  margin-right: 10px;
-} */
 
 details {
 	margin-left: 1em;
