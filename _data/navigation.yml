@@ -1,9 +1,9 @@
-docs:
-  - title: Sitemap
+main:
+  - title: "Sitemap"
     children:
-    - title: About
+    - title: "About"
       url: ./about.md
-    - title: Reading List
+    - title: "Reading List"
       url: ./reading.md
-    - title: Home
+    - title: "Home"
       url: ./README.md
