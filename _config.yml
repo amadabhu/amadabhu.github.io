@@ -78,11 +78,10 @@ kramdown:
   show_warnings     : false
 
 nav_enabled         : true
-defaults:
-  # _docs
-  scope:
-      path: ""
-      type: docs
-    values:
-      sidebar:
-          nav: "docs"
+defaults            : _docs
+  scope             :
+      path          : ""
+      type          : docs
+    values          :
+      sidebar       :
+          nav       : "docs"
