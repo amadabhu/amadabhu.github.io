@@ -2,8 +2,7 @@ Welcome to Achyuth Madabhushi's website!
 
 
 ## Contact
-first.last@protonmail.com
-  
+- [first].[last]@[gmail,protonmail].com
 
 ## Sitemap
 - [Home](./README.md)
