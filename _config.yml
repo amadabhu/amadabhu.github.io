@@ -31,7 +31,7 @@ unpublished         : false
 
 # Plugins
 whitelist           : []
-plugins             : [jekyll-sitemap]
+plugins             : [jekyll-sitemap,jekyll-toc]
 
 #themes
 theme: jekyll-theme-minimal
