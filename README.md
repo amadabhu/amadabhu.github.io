@@ -2,12 +2,12 @@ Welcome to Achyuth Madabhushi's website!
 
 
 ## Contact
-[first].[last]@[gmail,protonmail].com
+first.last@protonmail.com
   
 
 ## Sitemap
-[Home](./README.md)
-[About](./about.md)
-[Reading List](./reading.md)
+- [Home](./README.md)
+- [About](./about.md)
+- [Reading List](./reading.md)
 
 
