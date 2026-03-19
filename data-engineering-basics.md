@@ -4,9 +4,9 @@
 
 This is a high level primer, only designed to serve as brief introduction. Once you can answer the questions, the utilities in the toolbox will help you along.
 
-# [Toolbox](https://github.com/amadabhu/Snowflake-Lakehouse-Utilities/tree/main)
+# [Toolbox :toolbox:](https://github.com/amadabhu/Snowflake-Lakehouse-Utilities/tree/main) 
 
-This toolbox repo can be used as reusable utility functions.
+
 
 ## Input
 Inputs are your source information. This is what's sometimes referred to as "raw data". There's several approaches to the input side, a few examples are below:
