@@ -1,5 +1,6 @@
 # The Basics of Data Engineering
 
+## [Menu](./sitemap.md)
 
 ## Input
 Inputs are your source information. This is what's sometimes referred to as "raw data". There's several approaches to the input side, a few examples are below:
