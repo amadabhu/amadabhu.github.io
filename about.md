@@ -1,4 +1,4 @@
-## [Sitemap](./sitemap.md)
+## [Menu](./sitemap.md)
 
 ### About Me
 
