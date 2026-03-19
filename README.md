@@ -1,6 +1,3 @@
----
-style: sidebar
----
 
 # Welcome to Achyuth Madabhushi's website!
 
