@@ -33,7 +33,7 @@ whitelist           : []
 plugins             : [jekyll-sitemap,jekyll-toc]
 
 #themes
-theme: jekyll-theme-profile
+theme: jekyll-theme-minimal
 title: Achyuth Madabhushi
 description: "A collection of Achyuth's haphazard musings"
 style: sidebar
