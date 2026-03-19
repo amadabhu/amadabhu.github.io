@@ -4,7 +4,7 @@
 
 This is a high level primer, only designed to serve as brief introduction. Once you can answer the questions, the utilities in the toolbox will help you along.
 
-# [Toolbox :toolbox: &#129520;](https://github.com/amadabhu/Snowflake-Lakehouse-Utilities/tree/main) 
+# [ &#129520; Toolbox &#129520;](https://github.com/amadabhu/Snowflake-Lakehouse-Utilities/tree/main) 
 
 
 
