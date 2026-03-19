@@ -4,6 +4,10 @@
 
 This is a high level primer, only designed to serve as brief introduction. All of the utilities in this section of my website will help build solutions for the answers to the above questions.
 
+# [Toolbox](https://github.com/amadabhu/Snowflake-Lakehouse-Utilities/tree/main)
+
+This toolbox repo can be used as reusable utility functions.
+
 ## Input
 Inputs are your source information. This is what's sometimes referred to as "raw data". There's several approaches to the input side, a few examples are below:
 
