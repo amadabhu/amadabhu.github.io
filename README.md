@@ -1,4 +1,10 @@
+---
+style: sidebar
+---
+
 # Welcome to Achyuth Madabhushi's website!
+
+
 
 ## Sitemap
 - [Home](./README.md)
