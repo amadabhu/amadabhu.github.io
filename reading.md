@@ -1,3 +1,9 @@
+## [Sitemap](./sitemap.md)
+- [Home](./README.md)
+- [About](./about.md)
+- [Reading List](./reading.md)
+
+
 ## Nonfiction
 - Dark Matter and the Dinosaurs, Lisa Randall
 
@@ -43,7 +49,4 @@
 
 - This American Woman, Zarna Garg
 
-## [Sitemap](./sitemap.md)
-- [Home](./README.md)
-- [About](./about.md)
-- [Reading List](./reading.md)
+
