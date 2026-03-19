@@ -1,6 +1,8 @@
 # The Basics of Data Engineering
 
-##### [Menu](./sitemap.md)
+### [Menu](./sitemap.md)
+
+This is a high level primer, only designed to serve as brief introduction. All of the utilities in this section of my website will help build solutions for the answers to the above questions.
 
 ## Input
 Inputs are your source information. This is what's sometimes referred to as "raw data". There's several approaches to the input side, a few examples are below:
@@ -37,7 +39,7 @@ This is the final result, and it answers where the output of all the hardwork li
 - back to another REST API
 
 
-This is a high level primer, only designed to serve as brief introduction. All of the utilities in this section of my website will help build solutions for the answers to the above questions.
+
 
 
 
