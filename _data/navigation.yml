@@ -1,8 +1,8 @@
 docs_list_title: "sitemap"
 docs:
   - title: "About"
-    url: ./about.md
+    url: https://amadabhu.github.io/about
   - title: "Reading List"
-    url: ./reading.md
+    url: https://amadabhu.github.io/reading
   - title: "Home"
-    url: ./README.md
+    url: https://amadabhu.github.io/home
