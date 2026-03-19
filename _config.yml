@@ -78,12 +78,4 @@ kramdown:
   show_warnings     : false
 
 
-defaults:
-  # _docs
-  - scope:
-      path: ""
-      type: docs
-    values:
-      sidebar:
-        nav: 
-          - "docs"
+
