@@ -36,6 +36,7 @@ plugins             : [jekyll-sitemap,jekyll-toc]
 theme: jekyll-theme-profile
 title: Achyuth Madabhushi
 description: "A collection of Achyuth's haphazard musings"
+style: sidebar
 
 # Conversion
 markdown            : kramdown
