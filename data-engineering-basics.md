@@ -2,7 +2,7 @@
 
 ### [Menu](./sitemap.md)
 
-This is a high level primer, only designed to serve as brief introduction. All of the utilities in this section of my website will help build solutions for the answers to the above questions.
+This is a high level primer, only designed to serve as brief introduction. Once you can answer the questions, the utilities in the toolbox will help you along.
 
 # [Toolbox](https://github.com/amadabhu/Snowflake-Lakehouse-Utilities/tree/main)
 
