@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 ## Contact
-me@achyuthmadabhushi.com
-  
+- [first].[last]@[gmail,protonmail].com
 
-=======
+
 # amadabhu.github.io
 
 Source for [amadabhu.github.io](https://amadabhu.github.io). Jekyll‑flavored templates rendered by GitHub Pages on push, plus a small Python preview pipeline for local iteration without installing Ruby.
@@ -113,7 +111,3 @@ Automatic every 6 hours via [.github/workflows/refresh-substack.yml](.github/wor
 
 GitHub Pages builds and serves from the `main` branch root. Ensure repo Settings → Pages source is set to `main` / `/ (root)` — the legacy `/docs` source has been retired.
 
-## Domain
-
-Custom-domain / Squarespace forwarding work is tracked in [update-web-profile.md](./update-web-profile.md) Phase 4 and is intentionally the last step.
->>>>>>> 5c8561d (update re-direct url)
