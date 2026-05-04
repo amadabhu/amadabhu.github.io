@@ -2,9 +2,26 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+*.pdf
 # C extensions
 *.so
+links.yml
+# Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+
+# Python preview build venv
+.venv/
+
+# Old site mirror (Phase 0 of update-web-profile.md)
+legacy-site/
+
+# macOS
+.DS_Store
+
 
 # Distribution / packaging
 .Python
@@ -82,6 +99,7 @@ target/
 profile_default/
 ipython_config.py
 
+update-web-profile.md
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
 #   intended to run in multiple environments; otherwise, check them in:

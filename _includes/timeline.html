@@ -1,0 +1,47 @@
+{%- comment -%}
+  Files in content/timeline/ are named by start year ascending (e.g. 2012-udel.md
+  → 2023-steampunk.md). Reverse so the timeline displays newest-first.
+{%- endcomment -%}
+{%- assign entries = site.timeline | reverse -%}
+
+<ol class="timeline">
+{%- for entry in entries -%}
+  <li class="timeline-entry timeline-entry--{{ entry.type }}">
+    <div class="timeline-entry__rail" aria-hidden="true">
+      <span class="timeline-entry__dot"></span>
+    </div>
+    <div class="timeline-entry__year">
+      <span class="timeline-entry__year-start">{{ entry.start }}</span>
+      <span class="timeline-entry__year-sep">→</span>
+      <span class="timeline-entry__year-end">{{ entry.end }}</span>
+    </div>
+    <article class="timeline-entry__card">
+      <header class="timeline-entry__header">
+        {%- if entry.logo -%}
+          <img class="timeline-entry__logo" src="{{ entry.logo }}" alt="{{ entry.org }} logo" loading="lazy">
+        {%- else -%}
+          <span class="timeline-entry__org-badge" aria-hidden="true">{{ entry.org_short | default: entry.org | slice: 0, 1 }}</span>
+        {%- endif -%}
+        <div class="timeline-entry__meta">
+          <h3 class="timeline-entry__role">{{ entry.role }}</h3>
+          <p class="timeline-entry__org">
+            <span class="timeline-entry__org-name">{{ entry.org }}</span>
+            {%- if entry.location -%}
+              <span class="timeline-entry__sep">·</span>
+              <span class="timeline-entry__location">{{ entry.location }}</span>
+            {%- endif -%}
+          </p>
+        </div>
+        <span class="timeline-entry__type-tag">{{ entry.type }}</span>
+      </header>
+      {%- if entry.body != "" or entry.background -%}
+      <div class="timeline-entry__hover-card" role="note">
+        <span class="timeline-entry__background-label" aria-hidden="true">Background</span>
+        {%- if entry.body and entry.body != "" -%}{{ entry.body }}{%- endif -%}
+        {%- if entry.background and entry.background != "" -%}{{ entry.background | markdownify }}{%- endif -%}
+      </div>
+      {%- endif -%}
+    </article>
+  </li>
+{%- endfor -%}
+</ol>
