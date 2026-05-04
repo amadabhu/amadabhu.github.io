@@ -1,0 +1,44 @@
+{%- assign projects = site.projects -%}
+{%- if include.highlight_only -%}
+  {%- assign projects = projects | where: "highlight", true -%}
+{%- endif -%}
+{%- if include.max -%}
+  {%- assign projects = projects | slice: 0, include.max -%}
+{%- endif -%}
+
+<ul class="project-list">
+{%- for p in projects -%}
+  <li class="project-card">
+    <header class="project-card__header">
+      <h3 class="project-card__name">{{ p.name }}</h3>
+      <span class="project-card__status status--{{ p.status }}">{{ p.status }}</span>
+    </header>
+    {%- if p.one_liner -%}
+      <p class="project-card__one-liner">{{ p.one_liner }}</p>
+    {%- endif -%}
+    {%- if p.stack and p.stack.size > 0 -%}
+      <ul class="project-card__stack">
+        {%- for s in p.stack -%}<li>{{ s }}</li>{%- endfor -%}
+      </ul>
+    {%- endif -%}
+    {%- if p.links and p.links.size > 0 -%}
+      <ul class="project-card__links">
+        {%- for link in p.links -%}
+          <li>
+          {%- if link.url -%}
+            <a href="{{ link.url }}" rel="noopener">{{ link.label }}&nbsp;↗</a>
+          {%- else -%}
+            <span class="project-card__link-label">{{ link.label }}</span>
+          {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+    {%- if p.body and p.body != "" -%}
+      <div class="project-card__hover-card" role="note">
+        <div class="project-card__summary">{{ p.body }}</div>
+      </div>
+    {%- endif -%}
+  </li>
+{%- endfor -%}
+</ul>

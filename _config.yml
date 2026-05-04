@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Where things are
 source              : .
 destination         : ./_site
@@ -72,3 +73,52 @@ kramdown:
   hard_wrap         : false
   footnote_nr       : 1
   show_warnings     : false
+=======
+title: Achyuth Madabhushi
+tagline: Senior ML engineer. Climate, security, and the data plumbing that makes AI useful.
+description: >-
+  Personal site of Achyuth Madabhushi — Senior ML Engineer at Steampunk.
+  Notes from achyuthhacks.substack.com, project work, and a long-form musings.
+url: https://amadabhu.github.io
+baseurl: ""
+
+author:
+  name: Achyuth Madabhushi
+  email: me@achyuthmadabhushi.com
+  substack: achyuthhacks
+  github: amadabhu
+
+substack:
+  handle: achyuthhacks
+  feed_url: https://achyuthhacks.substack.com/feed
+  display_count: 5
+  snippet_chars: 220
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: /:slug/
+
+exclude:
+  - README.md
+  - update-web-profile.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - docs
+  - legacy-site
+  - assets/*.pdf
+  - "*.zip"
+
+include:
+  - assets
+  - content
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+>>>>>>> 5c8561d (update re-direct url)
