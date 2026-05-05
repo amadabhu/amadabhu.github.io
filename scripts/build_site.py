@@ -340,17 +340,30 @@ def main() -> int:
     site = load_config()
     site["data"] = load_data()
     site.update(load_collections())
-    env = make_env(site)
 
-    pages_built = 0
     if not CONTENT.exists():
         print(f"content/ not found at {CONTENT}", file=sys.stderr)
         return 1
+
+    # Pass 1: parse every top-level page so its frontmatter is queryable via
+    # site.pages from any include (matches Jekyll's `site.pages` behavior).
+    page_specs = []
+    pages = []
     for md_path in sorted(CONTENT.glob("*.md")):
         text = md_path.read_text()
         meta, body = parse_frontmatter(text)
         permalink = meta.get("permalink") or f"/{md_path.stem}/"
         meta.setdefault("url", permalink)
+        meta.setdefault("permalink", permalink)
+        page_specs.append((md_path, meta, body))
+        pages.append(dict(meta))
+    site["pages"] = pages
+
+    env = make_env(site)
+
+    pages_built = 0
+    for md_path, meta, body in page_specs:
+        permalink = meta["permalink"]
         html = render_page(env, site, md_path, body, meta)
         write_page(html, permalink)
         pages_built += 1
