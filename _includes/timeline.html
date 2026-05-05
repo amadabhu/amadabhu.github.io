@@ -11,9 +11,9 @@
       <span class="timeline-entry__dot"></span>
     </div>
     <div class="timeline-entry__year">
-      <span class="timeline-entry__year-start">{{ entry.start }}</span>
-      <span class="timeline-entry__year-sep">→</span>
-      <span class="timeline-entry__year-end">{{ entry.end }}</span>
+      {%- if entry.start -%}<span class="timeline-entry__year-start">{{ entry.start }}</span>{%- endif -%}
+      {%- if entry.start and entry.end -%}<span class="timeline-entry__year-sep">→</span>{%- endif -%}
+      {%- if entry.end -%}<span class="timeline-entry__year-end">{{ entry.end }}</span>{%- endif -%}
     </div>
     <article class="timeline-entry__card">
       <header class="timeline-entry__header">
