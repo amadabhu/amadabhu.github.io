@@ -4,7 +4,7 @@
 
 # amadabhu.github.io
 
-Source for [amadabhu.github.io](https://amadabhu.github.io). Jekyll‑flavored templates rendered by GitHub Pages on push, plus a small Python preview pipeline for local iteration without installing Ruby.
+Source for [achyuthmadabhushi.com](https://achyuthmadabhushi.com). Jekyll‑flavored templates rendered by GitHub Pages on push, plus a small Python preview pipeline for local iteration without installing Ruby.
 
 ## Layout
 
