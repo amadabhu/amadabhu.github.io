@@ -1,6 +1,6 @@
 ---
 order: 30
-start: 2016
+start: 
 end: 2017
 type: work
 role: Environmental Engineer

@@ -1,6 +1,6 @@
 ---
 order: 50
-start: 2018
+start: 
 end: 2018
 type: work
 role: Graduate Teaching Assistant
