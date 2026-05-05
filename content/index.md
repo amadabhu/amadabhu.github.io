@@ -8,7 +8,7 @@ body_class: page-home
 # Welcome 
 
 
-**Senior Machine Learning Engineer** working at the seam of data engineering and machine learning — most days that means enterprise RAG, secure deployments, and the unglamorous data plumbing that decides whether any of it actually helps anyone. The [long version is here](/musings/).
+**Senior Machine Learning Engineer** working at the seam of data engineering and machine learning — most days that means enterprise RAG, secure deployments, and the unglamorous data plumbing that decides whether any of it actually helps anyone.
 
 ## Recent writing
 

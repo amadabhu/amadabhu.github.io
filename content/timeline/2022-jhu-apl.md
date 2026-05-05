@@ -12,4 +12,4 @@ logo: /assets/logos/apl.png
 Sensitive national-security work — most of what I'd want to say about it is under NDA.
 Took a research ML prototype to a production-ready containerized application enabling
 rapid reporting.
-[If the details were publishable, they'd be here:](https://iaa.jhu.edu/collaboration/achyuth-madabhushi/)
+[If the details were publishable, they'd be here](https://iaa.jhu.edu/collaboration/achyuth-madabhushi/)
