@@ -1,6 +1,6 @@
 ---
 order: 70
-start: 2020
+start: 
 end: 2022
 type: work
 role: Lead Data Engineer

@@ -1,6 +1,6 @@
 ---
 order: 60
-start: 2018
+start: 
 end: 2020
 type: work
 role: Research Software Engineer

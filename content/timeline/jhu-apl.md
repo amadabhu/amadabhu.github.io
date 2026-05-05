@@ -1,6 +1,6 @@
 ---
 order: 80
-start: 2022
+start: 
 end: 2023
 type: work
 role: Senior Staff Data Architect
