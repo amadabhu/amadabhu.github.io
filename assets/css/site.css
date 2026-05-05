@@ -612,7 +612,17 @@ hr {
 .timeline-entry:first-child .timeline-entry__dot {
   background: var(--accent);
   border-color: var(--accent);
-  box-shadow: 0 0 0 4px rgba(126, 231, 135, 0.15);
+  animation: timeline-dot-pulse 2.2s ease-in-out infinite;
+}
+@keyframes timeline-dot-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(126, 231, 135, 0.45); }
+  50%      { box-shadow: 0 0 0 8px rgba(126, 231, 135, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .timeline-entry:first-child .timeline-entry__dot {
+    animation: none;
+    box-shadow: 0 0 0 4px rgba(126, 231, 135, 0.15);
+  }
 }
 .timeline-entry--education .timeline-entry__dot {
   border-style: dashed;
