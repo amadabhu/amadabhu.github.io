@@ -139,6 +139,7 @@ hr {
 .page-home .page { max-width: 1140px; }
 .page-projects .page { max-width: 1140px; }
 .page-guides .page { max-width: 1140px; }
+.page-timeline .page { max-width: 1140px; }
 
 /* ===== Guides (PDF cards) ===== */
 .guide-list {
@@ -748,8 +749,10 @@ hr {
   border-right-color: var(--bg-elev);
 }
 
-/* Fall back to inline-below when there isn't horizontal room. */
-@media (max-width: 1100px) {
+/* Fall back to inline-below when there isn't horizontal room. With the
+   timeline page now at 1140px, the side popover needs a viewport ≥ ~1900px
+   to avoid clipping — drop to inline-below on anything narrower. */
+@media (max-width: 1900px) {
   .timeline-entry__hover-card {
     top: calc(100% + 10px);
     left: 0;
