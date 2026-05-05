@@ -141,6 +141,35 @@ hr {
 .page-guides .page { max-width: 1140px; }
 .page-timeline .page { max-width: 1140px; }
 
+/* Title row: page H1 on the left, an action (e.g. a download button) on
+   the right. Wraps under on narrow viewports. */
+.page-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.page-title-row h1 {
+  margin: 0;
+}
+.resume-download {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--info);
+  background: rgba(126, 184, 231, 0.08);
+  border: 1px solid var(--info-dim);
+  border-radius: 6px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--info-dim);
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.resume-download:hover {
+  background: var(--info);
+  color: var(--bg);
+  border-color: var(--info);
+}
+
 /* ===== Guides (PDF cards) ===== */
 .guide-list {
   list-style: none;

@@ -275,21 +275,23 @@ def copy_static_outputs() -> None:
             ignore=shutil.ignore_patterns("*.zip", ".DS_Store", ".git*"),
         )
 
-    # Binary files inside content/<collection>/ → /<collection>/<file>
+    # Binary files inside content/<collection>/ (recursively) →
+    # /<collection>/<...relative path...>/<file>. Recursion lets a collection
+    # group binaries into subfolders (e.g. `content/timeline/Resume/x.pdf`
+    # served at `/timeline/Resume/x.pdf`).
     if CONTENT.exists():
         for sub in sorted(CONTENT.iterdir()):
             if not sub.is_dir():
                 continue
-            binaries = [
-                f for f in sub.iterdir()
-                if f.is_file() and f.suffix.lower() != ".md" and not f.name.startswith(".")
-            ]
-            if not binaries:
-                continue
-            target = OUT / sub.name
-            target.mkdir(parents=True, exist_ok=True)
-            for f in binaries:
-                shutil.copy2(f, target / f.name)
+            for f in sub.rglob("*"):
+                if not f.is_file():
+                    continue
+                if f.suffix.lower() == ".md" or f.name.startswith("."):
+                    continue
+                rel = f.relative_to(sub)
+                dst = OUT / sub.name / rel
+                dst.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(f, dst)
 
     # CNAME for GH Pages custom domain (if present at repo root)
     cname = ROOT / "CNAME"
