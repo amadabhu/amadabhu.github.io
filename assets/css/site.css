@@ -598,7 +598,7 @@ hr {
   background: var(--bg-elev);
   border-radius: 8px;
   border-left: 2px solid var(--accent-dim);
-  padding: 16px 20px 18px;
+  padding: 22px 28px 24px;
   margin-left: 4px;
 }
 /* Work cards mirror their popover: blue left edge. */
@@ -628,13 +628,13 @@ hr {
 .timeline-entry__header {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
-  gap: 14px;
+  gap: 20px;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 .timeline-entry__logo {
-  width: 48px;
-  height: 48px;
+  width: 72px;
+  height: 72px;
   object-fit: contain;
   background: transparent;
   flex-shrink: 0;
@@ -642,17 +642,17 @@ hr {
 .timeline-entry--work .timeline-entry__logo,
 .timeline-entry--education .timeline-entry__logo {
   width: auto;
-  max-width: 64px;
-  max-height: 36px;
+  max-width: 130px;
+  max-height: 64px;
 }
 .timeline-entry__org-badge {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
   border: 1px solid var(--rule);
   font-family: var(--mono);
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1.6rem;
   color: var(--text-muted);
   display: flex;
   align-items: center;
@@ -662,8 +662,8 @@ hr {
 .timeline-entry__meta { min-width: 0; }
 .timeline-entry__role {
   font-family: var(--mono);
-  font-size: 1.02rem;
-  margin: 0 0 2px 0;
+  font-size: 1.15rem;
+  margin: 0 0 4px 0;
   color: var(--link-hover);
   line-height: 1.3;
 }
