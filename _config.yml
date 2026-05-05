@@ -28,6 +28,7 @@ permalink: /:slug/
 exclude:
   - README.md
   - update-web-profile.md
+  - substack-update-feed.md
   - Gemfile
   - Gemfile.lock
   - vendor

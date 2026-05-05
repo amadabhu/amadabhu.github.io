@@ -18,7 +18,7 @@ Source for [achyuthmadabhushi.com](https://achyuthmadabhushi.com). Jekyll‑flav
 ├── assets/                 # css, js, images, resumes, school logos
 │   └── logos/              # flat-named logos for timeline cards
 ├── scripts/                # python preview pipeline
-└── .github/workflows/      # Substack feed refresher
+└── .github/workflows/      # GH Pages deploy
 ```
 
 ## `content/` — single source of truth for writable text
@@ -92,7 +92,7 @@ Inside `build_site.py`:
 
 ## Refreshing the Substack feed
 
-Automatic every 6 hours via [.github/workflows/refresh-substack.yml](.github/workflows/refresh-substack.yml). To run on demand: **Actions → Refresh Substack feed → Run workflow**. To run locally: `python3 scripts/build_substack_feed.py` — uses stdlib only, regenerates `_includes/substack-feed.html`.
+Run locally after publishing a new post — Substack 403s GitHub Actions IPs, so this isn't automated. See [substack-update-feed.md](substack-update-feed.md).
 
 ## Editing flow
 

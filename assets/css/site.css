@@ -159,7 +159,6 @@ hr {
     gap: 24px;
   }
   .timeline-layout__aside {
-    order: -1;
     max-width: 320px;
   }
 }
@@ -173,6 +172,13 @@ hr {
 }
 .resume-card-list .guide-card__preview {
   height: 220px;
+}
+
+/* Mobile: iframe-PDF preview renders as a giant placeholder on most
+   mobile browsers, so drop the preview and keep the title + download
+   CTA only. */
+@media (max-width: 920px) {
+  .resume-card-list .guide-card__preview { display: none; }
 }
 
 /* ===== Guides (PDF cards) ===== */
