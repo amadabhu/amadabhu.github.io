@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 4
 slug: enterprise-rag
 name: Enterprise RAG
 status: shipped

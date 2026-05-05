@@ -141,28 +141,18 @@ hr {
 .page-guides .page { max-width: 1140px; }
 .page-timeline .page { max-width: 1140px; }
 
-/* Resume download tile: rendered visually like a guide-card download
-   button. The wrapper floats to the top right of the prose so the tile
-   sits inline with the page H1 with normal block-level spacing. */
-.resume-download-wrap {
+/* Resume tile: a single guide-card identical to the reference-guide
+   cards, just scaled down a touch and floated to the top right of the
+   timeline prose so the H1 wraps to its left. */
+.resume-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 24px;
   float: right;
-  margin: 0 0 12px 16px;
+  width: 240px;
 }
-.resume-download {
-  display: inline-block;
-  padding: 10px 14px;
-  font-family: var(--mono);
-  font-size: 0.85rem;
-  color: var(--info);
-  background: rgba(126, 184, 231, 0.08);
-  border: 1px solid var(--info-dim);
-  border-radius: 6px;
-  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
-}
-.resume-download:hover {
-  background: var(--info);
-  color: var(--bg);
-  border-color: var(--info);
+.resume-card-list .guide-card__preview {
+  height: 240px;
 }
 
 /* ===== Guides (PDF cards) ===== */

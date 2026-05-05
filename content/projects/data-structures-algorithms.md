@@ -3,7 +3,7 @@ order: 5
 slug: data-structures-algorithms
 name: DataStructuresAlgorithms
 status: public
-highlight: false
+highlight: true
 one_liner: A practice repository working through CLRS chapters 6–26 — every classic data structure and algorithm as a compact, runnable Python file.
 stack:
   - Python
