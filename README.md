@@ -37,10 +37,10 @@ content/
 │   ├── toolbox.md
 │   └── data-structures-algorithms.md
 ├── timeline/               # COLLECTION — one .md per career / education entry
-│   ├── 2012-udel.md
-│   ├── 2015-nasa.md
+│   ├── udel.md
+│   ├── nasa.md
 │   ├── ...
-│   └── 2023-steampunk.md
+│   └── steampunk.md
 └── quick-reference-guides/ # BINARY COLLECTION — PDFs, auto-rendered as cards
     ├── Python_CheatSheet_*.pdf
     ├── ML_cheat_sheet.pdf
