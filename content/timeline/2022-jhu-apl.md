@@ -6,7 +6,7 @@ role: Senior Staff Data Architect
 org: Johns Hopkins Applied Physics Lab
 org_short: JHU APL
 location: Laurel, MD
-logo: /assets/logos/apl.png
+logo: /assets/logos/apl.svg
 ---
 
 Sensitive national-security work — most of what I'd want to say about it is under NDA.
