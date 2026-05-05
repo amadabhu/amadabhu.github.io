@@ -2,7 +2,7 @@
 - [first].[last]@[gmail,protonmail].com
 
 
-# amadabhu.github.io
+# my super dope website 
 
 Source for [achyuthmadabhushi.com](https://achyuthmadabhushi.com). Jekyll‑flavored templates rendered by GitHub Pages on push, plus a small Python preview pipeline for local iteration without installing Ruby.
 
