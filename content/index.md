@@ -25,4 +25,4 @@ Full list on the [projects page](/projects/).
 
 - [GitHub](https://github.com/amadabhu) — public code, forks, and a deliberately messy scratchpad.
 - [Substack](https://substack.com/@achyuthhacks) — irregular notes on whatever rabbit hole has me captive.
-- Email me : achyuth.madabhushi@[gmail.com,protonmail.com]
+- Email me : first.last at [gmail.com,protonmail.com]
