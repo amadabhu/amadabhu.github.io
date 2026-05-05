@@ -8,6 +8,12 @@ org: University of Delaware
 org_short: UDel
 location: Newark, DE
 logo: /assets/logos/udel.png
+stack:
+  - Differential Equations
+  - Fluid Mechanics
+  - Thermodynamics
+  - Engineers Without Borders
+  - Phi Sigma Pi National Honor Fraternity
 background: |
   I started in environmental engineering at the University of Delaware, with NASA
   Space Grant summer research along the way. The thread that pulled me into

@@ -132,9 +132,39 @@ def parse_frontmatter(text: str) -> tuple[dict, str]:
     return yaml.safe_load(m.group(1)) or {}, m.group(2)
 
 
+_HIDDEN_HEADING_RE = re.compile(r"^(#{1,6})[ \t]+hidden[ \t]*$", re.IGNORECASE)
+_HEADING_RE = re.compile(r"^(#{1,6})[ \t]+\S")
+
+
+def strip_hidden_sections(text: str) -> str:
+    """Drop any markdown section whose heading text is exactly "hidden".
+
+    A section runs from a `# hidden` (any level) heading until the next
+    heading of equal-or-higher level, or end of document. Useful for keeping
+    private notes alongside published content in the same source file.
+    """
+    lines = text.splitlines(keepends=True)
+    out: list[str] = []
+    i, n = 0, len(lines)
+    while i < n:
+        m = _HIDDEN_HEADING_RE.match(lines[i].rstrip("\n"))
+        if not m:
+            out.append(lines[i])
+            i += 1
+            continue
+        level = len(m.group(1))
+        i += 1
+        while i < n:
+            m2 = _HEADING_RE.match(lines[i])
+            if m2 and len(m2.group(1)) <= level:
+                break
+            i += 1
+    return "".join(out)
+
+
 def render_markdown(text: str) -> str:
     return md_lib.markdown(
-        text,
+        strip_hidden_sections(text),
         extensions=["extra", "fenced_code", "tables", "sane_lists", "toc"],
         output_format="html5",
     )

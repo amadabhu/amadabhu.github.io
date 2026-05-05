@@ -34,6 +34,11 @@
         </div>
         <span class="timeline-entry__type-tag">{{ entry.type }}</span>
       </header>
+      {%- if entry.stack and entry.stack.size > 0 -%}
+        <ul class="timeline-entry__stack">
+          {%- for s in entry.stack -%}<li>{{ s }}</li>{%- endfor -%}
+        </ul>
+      {%- endif -%}
       {%- if entry.body != "" or entry.background -%}
       <div class="timeline-entry__hover-card" role="note">
         <span class="timeline-entry__background-label" aria-hidden="true">Background</span>

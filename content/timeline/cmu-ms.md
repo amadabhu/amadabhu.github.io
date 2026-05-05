@@ -8,6 +8,13 @@ org: Carnegie Mellon University
 org_short: CMU
 location: Pittsburgh, PA
 logo: /assets/logos/cmu.png
+stack:
+  - data acquisition
+  - numerical methods
+  - advanced infrastructure systems
+  - data structures
+  - machine learning
+  - sensing and data mining
 background: |
   Went back for the M.S. and subsequently into into software engineering and applied research. I think of the
   civil-engineering background less as a detour and more as the reason I take

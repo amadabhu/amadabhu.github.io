@@ -7,6 +7,11 @@ role: Environmental Engineer
 org: Locus Technologies
 location: San Jose, CA
 logo: /assets/logos/locus.png
+stack:
+- HTML
+- SQL
+- CSS
+- visual basic
 ---
 
 SaaS platform used by Los Alamos National Lab. The first job that made me realize

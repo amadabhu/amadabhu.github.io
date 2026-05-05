@@ -7,6 +7,14 @@ role: Research Software Engineer
 org: RAND Corporation
 location: Santa Monica, CA
 logo: /assets/logos/rand.jpeg
+stack:
+  - Python
+  - Django
+  - MongoDB
+  - HDFS
+  - GIS
+  - Tableau
+  - high performer
 ---
 
 Maintained an enterprise HDFS cluster used by ~250 researchers. Built an SVM-based

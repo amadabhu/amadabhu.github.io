@@ -8,6 +8,13 @@ org: Thomson Reuters Special Services
 org_short: TRSS
 location: McLean, VA
 logo: /assets/logos/trss.png
+stack:
+  - Snowflake
+  - Apache NiFi
+  - AWS S3
+  - Python
+  - best teamwork award
+  - high performer
 ---
 
 Built a data platform ingesting up to 500 GB/day from 15 vendors in Snowflake +
