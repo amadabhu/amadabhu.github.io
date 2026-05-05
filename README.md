@@ -100,7 +100,7 @@ Automatic every 6 hours via [.github/workflows/refresh-substack.yml](.github/wor
 |---|---|
 | Change page prose | the matching top-level `content/*.md` |
 | Add or edit a project | a file in `content/projects/<slug>.md` |
-| Add or edit a career/education entry | a file in `content/timeline/<year>-<org>.md` |
+| Add or edit a career/education entry | a file in `content/timeline/<org>.md` |
 | Add a downloadable PDF guide | drop the file in `content/quick-reference-guides/`; it appears on `/guides/` automatically |
 | Change site-wide nav | `_includes/header.html` |
 | Change the visual theme | `assets/css/site.css` (search section headers like `===== Timeline =====`) |
