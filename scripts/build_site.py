@@ -252,9 +252,48 @@ def write_page(html: str, permalink: str) -> None:
     (target_dir / "index.html").write_text(html, encoding="utf-8")
 
 
-# Assets are not copied or symlinked into _site/. Use scripts/serve.py to
-# preview locally — it serves _site/ for HTML and falls through to ./assets/
-# for any /assets/* path, which keeps the source assets/ as the single copy.
+# For local preview, scripts/serve.py overlays /assets/* and /<dir>/* directly
+# from the source directories (no copies in _site/). For production deploy via
+# GitHub Actions, _site/ needs to be self-contained, so the build step below
+# copies assets, binary-collection files, CNAME, and a .nojekyll marker into it.
+
+
+def copy_static_outputs() -> None:
+    # assets/
+    src_assets = ROOT / "assets"
+    if src_assets.exists():
+        dst_assets = OUT / "assets"
+        if dst_assets.exists():
+            shutil.rmtree(dst_assets)
+        shutil.copytree(
+            src_assets,
+            dst_assets,
+            ignore=shutil.ignore_patterns("*.zip", ".DS_Store", ".git*"),
+        )
+
+    # Binary files inside content/<collection>/ → /<collection>/<file>
+    if CONTENT.exists():
+        for sub in sorted(CONTENT.iterdir()):
+            if not sub.is_dir():
+                continue
+            binaries = [
+                f for f in sub.iterdir()
+                if f.is_file() and f.suffix.lower() != ".md" and not f.name.startswith(".")
+            ]
+            if not binaries:
+                continue
+            target = OUT / sub.name
+            target.mkdir(parents=True, exist_ok=True)
+            for f in binaries:
+                shutil.copy2(f, target / f.name)
+
+    # CNAME for GH Pages custom domain (if present at repo root)
+    cname = ROOT / "CNAME"
+    if cname.exists():
+        shutil.copy2(cname, OUT / "CNAME")
+
+    # .nojekyll suppresses any GH Pages Jekyll processing of the artifact
+    (OUT / ".nojekyll").touch()
 
 
 def main() -> int:
@@ -280,6 +319,8 @@ def main() -> int:
         write_page(html, permalink)
         pages_built += 1
         print(f"  build  {permalink}  ({md_path.name})")
+
+    copy_static_outputs()
 
     print(f"\nBuilt {pages_built} pages into {OUT}.")
     print("Serve:  python3 scripts/serve.py")

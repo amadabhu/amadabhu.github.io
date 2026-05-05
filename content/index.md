@@ -21,8 +21,8 @@ body_class: page-home
 
 Full list on the [projects page](/projects/).
 
-## Elsewhere
+## Contact
 
 - [GitHub](https://github.com/amadabhu) — public code, forks, and a deliberately messy scratchpad.
 - [Substack](https://substack.com/@achyuthhacks) — irregular notes on whatever rabbit hole has me captive.
-- [Email](mailto:achyuth.madabhushi@[gmail.com,protonmail.com])
+- Email me : achyuth.madabhushi@[gmail.com,protonmail.com]
