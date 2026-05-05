@@ -1,6 +1,6 @@
 ---
 start: 2017
-end: 2018
+end: 2019
 type: education
 role: M.S. Civil and Environmental Engineering
 org: Carnegie Mellon University

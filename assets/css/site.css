@@ -141,27 +141,22 @@ hr {
 .page-guides .page { max-width: 1140px; }
 .page-timeline .page { max-width: 1140px; }
 
-/* Title row: page H1 on the left, an action (e.g. a download button) on
-   the right. Wraps under on narrow viewports. */
-.page-title-row {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-.page-title-row h1 {
-  margin: 0;
+/* Resume download tile: rendered visually like a guide-card download
+   button. The wrapper floats to the top right of the prose so the tile
+   sits inline with the page H1 with normal block-level spacing. */
+.resume-download-wrap {
+  float: right;
+  margin: 0 0 12px 16px;
 }
 .resume-download {
+  display: inline-block;
+  padding: 10px 14px;
   font-family: var(--mono);
   font-size: 0.85rem;
   color: var(--info);
   background: rgba(126, 184, 231, 0.08);
   border: 1px solid var(--info-dim);
   border-radius: 6px;
-  padding: 10px 14px;
-  border-bottom: 1px solid var(--info-dim);
   transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 .resume-download:hover {
