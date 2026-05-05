@@ -5,7 +5,7 @@ type: work
 role: Senior Machine Learning Engineer
 org: Steampunk
 location: McLean, VA
-logo: /assets/logos/steampunk.png
+logo: /assets/logos/steampunk-logo.jpeg
 ---
 
 Prototyped, architected, and shipped one of the U.S. Coast Guard's first production RAG-based LLM applications. <br/> Design Databricks deployments via Terraform across
