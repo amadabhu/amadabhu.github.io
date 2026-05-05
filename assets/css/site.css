@@ -141,18 +141,38 @@ hr {
 .page-guides .page { max-width: 1140px; }
 .page-timeline .page { max-width: 1140px; }
 
-/* Resume tile: a single guide-card identical to the reference-guide
-   cards, just scaled down a touch and floated to the top right of the
-   timeline prose so the H1 wraps to its left. */
+/* Timeline page is a two-column layout: the timeline itself on the
+   left, and the résumé card pinned to a right-side aside so it never
+   overlaps with the timeline cards. */
+.timeline-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 240px;
+  gap: 40px;
+  align-items: start;
+}
+.timeline-layout__main { min-width: 0; }
+.timeline-layout__aside { min-width: 0; }
+
+@media (max-width: 920px) {
+  .timeline-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .timeline-layout__aside {
+    order: -1;
+    max-width: 320px;
+  }
+}
+
+/* Résumé card on the timeline page: a single guide-card scaled down
+   to fit the right-hand sidebar. */
 .resume-card-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 12px 24px;
-  float: right;
-  width: 240px;
+  margin: 0;
 }
 .resume-card-list .guide-card__preview {
-  height: 240px;
+  height: 220px;
 }
 
 /* ===== Guides (PDF cards) ===== */

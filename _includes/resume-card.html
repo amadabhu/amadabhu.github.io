@@ -1,0 +1,17 @@
+{%- assign r = site.pages | where: "permalink", "/resume/" | first -%}
+{%- if r -%}
+<ul class="guide-list resume-card-list">
+  <li class="guide-card">
+    <div class="guide-card__preview">
+      <iframe src="{{ r.resume_pdf | relative_url }}#toolbar=0&navpanes=0&view=FitH"
+              title="Resume preview"
+              loading="lazy"></iframe>
+    </div>
+    <div class="guide-card__meta">
+      <h3 class="guide-card__name">{{ r.resume_name }}</h3>
+      <span class="guide-card__size">PDF</span>
+    </div>
+    <a class="guide-card__download" href="{{ r.resume_pdf | relative_url }}" download="{{ r.download_filename }}">Download&nbsp;↓</a>
+  </li>
+</ul>
+{%- endif -%}

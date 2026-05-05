@@ -4,7 +4,7 @@ slug: personal-site
 name: amadabhu.github.io
 status: shipped
 highlight: true
-one_liner: This site — a Jekyll-flavored personal site with a small Python build pipeline so it renders without Ruby.
+one_liner: This site, a Jekyll-flavored personal site with a small Python build pipeline so it renders without Ruby.
 stack:
   - Jekyll
   - Liquid
