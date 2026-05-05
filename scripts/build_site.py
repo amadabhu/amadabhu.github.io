@@ -106,10 +106,14 @@ def load_collections() -> dict:
             if not f.is_file() or f.suffix.lower() == ".md" or f.name.startswith("."):
                 continue
             size = f.stat().st_size
+            # URL-encode the path components so spaces, '+', and other URL-
+            # significant chars in user-supplied filenames don't break links.
+            from urllib.parse import quote
+            url = f"/{quote(sub.name)}/{quote(f.name)}"
             files.append({
                 "filename": f.name,
                 "name": humanize_filename(f.stem),
-                "url": f"/{sub.name}/{f.name}",
+                "url": url,
                 "ext": f.suffix.lstrip(".").lower(),
                 "size_bytes": size,
                 "size_label": f"{size / 1024 / 1024:.1f} MB" if size >= 1024 * 1024 else f"{size // 1024} KB",

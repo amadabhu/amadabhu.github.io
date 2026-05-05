@@ -2,7 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Ignore resume / cover-letter PDFs in assets/ (private — not for the public site).
+# Cheat-sheet PDFs in content/quick-reference-guides/ stay TRACKED so they ship.
 assets/*.pdf
+
 # C extensions
 *.so
 links.yml
