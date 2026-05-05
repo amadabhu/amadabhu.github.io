@@ -6,9 +6,10 @@ permalink: /timeline/
 body_class: page-timeline
 ---
 
+# Timeline
+
 <div class="timeline-layout">
   <div class="timeline-layout__main">
-    <h1 id="timeline">Timeline</h1>
     {% include timeline.html %}
   </div>
   <aside class="timeline-layout__aside">
