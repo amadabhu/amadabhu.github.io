@@ -3,7 +3,7 @@ order: 30
 start: 
 end: 2017
 type: work
-role: Environmental Engineer
+role: Engineer 1
 org: Locus Technologies
 location: San Jose, CA
 logo: /assets/logos/locus.png
